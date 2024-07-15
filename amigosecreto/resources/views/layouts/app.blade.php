@@ -312,7 +312,7 @@ function realizarSorteio() {
     })
     .catch(error => {
         // Exibir modal de erro com a mensagem da API
-        console.error('Erro ao realizar sorteio:', error.message);
+        console.error('Erro ao sortear. Verifique se há pelo menos 2 pessoas cadastradas', error.message);
         exibirModalErro('Erro ao sortear. Verifique se há pelo menos 2 pessoas cadastradas.');
     });
 }
